@@ -1,0 +1,10 @@
+.card-body {
+  height: 150px;
+}
+
+.btn-color {
+  background-color: #609DEA;
+}
+.btn-color:hover {
+  background-color: #EC635E;
+}

@@ -1,0 +1,23 @@
+.form-style {
+  text-align: left;
+  padding: 25px 25px 10px;
+}
+
+.underline-text {
+  color: white;
+  font-size: 0.75rem;
+}
+
+.font-style {
+  font-weight: 100;
+}
+
+.form-group {
+  padding-bottom: 30px;
+}
+
+.btn-place {
+  padding-bottom: 30px;
+}
+
+/*# sourceMappingURL=auth-form.component.css.map */

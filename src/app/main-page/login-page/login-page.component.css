@@ -1,0 +1,13 @@
+.border-custom {
+
+  border-right: solid 1px white;
+}
+.form-box {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+h3 {
+  padding-bottom: 8px;
+}

@@ -1,0 +1,14 @@
+<div class="container">
+  <div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{flipCard?.flipCardFront?.content}}</h5>
+        <p class="card-text" *ngIf="flip">{{flipCard?.flipCardBack?.content}}</p>
+      </div>
+      <button class="btn btn-color" *ngIf="!flip" (click)="fliping()">Flip</button>
+      <button class="btn btn-color" *ngIf="next" (click)="nextCard()">Next</button>
+    </div>
+  </div>
+
+
+</div>
