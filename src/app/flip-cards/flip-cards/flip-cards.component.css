@@ -1,10 +1,35 @@
 .card-body {
   height: 150px;
 }
+.center-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.reverse-side {
+  border-top: solid #609DEA;
+  padding-top: inherit;
+  font-weight: 700;
+}
+
+h4 {
+  color: #282828;
+}
 
 .btn-color {
   background-color: #609DEA;
 }
 .btn-color:hover {
   background-color: #EC635E;
+}
+
+.container-item {
+  align-items: center;
+  text-align: center;
+}
+
+.all {
+  margin-top: 15px;
 }

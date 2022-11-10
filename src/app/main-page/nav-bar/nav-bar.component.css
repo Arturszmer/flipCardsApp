@@ -1,0 +1,20 @@
+.custom-nav {
+  border: red dashed 1px;
+  display: flex;
+}
+.custom-nav-position {
+  border: red dashed 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.size {
+  height: 50px;
+  float: left;
+}
+
+.nav-item :hover{
+  cursor: pointer;
+  color: white;
+}

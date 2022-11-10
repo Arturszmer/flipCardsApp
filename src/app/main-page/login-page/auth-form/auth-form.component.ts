@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auth-form.component.css']
 })
 export class AuthFormComponent implements OnInit {
+  emailAddress: string = "";
+  userPassword?: string;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onSubmit() {
+    console.log(this.emailAddress, this.userPassword, 'values')
+  }
 }

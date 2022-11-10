@@ -24,4 +24,9 @@ button {
   background-color: #609DEA;
 }
 
+label {
+  font-size: 1.25rem;
+  color: white;
+}
+
 /*# sourceMappingURL=auth-form.component.css.map */

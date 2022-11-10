@@ -1,14 +1,28 @@
-<div class="container">
-  <div>
+<div class="container-item">
+  <div class="center-card">
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">{{flipCard?.flipCardFront?.content}}</h5>
-        <p class="card-text" *ngIf="flip">{{flipCard?.flipCardBack?.content}}</p>
+        <h4 class="front-side">{{flipCard?.flipCardFront?.content}}</h4>
+        <h4 class="reverse-side" *ngIf="flip">{{flipCard?.flipCardBack?.content}}</h4>
       </div>
       <button class="btn btn-color" *ngIf="!flip" (click)="fliping()">Flip</button>
       <button class="btn btn-color" *ngIf="next" (click)="nextCard()">Next</button>
     </div>
   </div>
 
+
+</div>
+<div class="container-item all">
+  <button (click)=showCards() class="btn btn-light">Show All</button>
+
+  <div class="container" *ngFor="let card of flipCards">
+  <div class="card" style="margin: 5px; flex-direction: column">
+    <div class="card-body">
+      <h4 class="front-side">{{card.flipCardFront.content}}</h4>
+      <h4 class="reverse-side">{{card.flipCardBack.content}}</h4>
+    </div>
+
+  </div>
+  </div>
 
 </div>

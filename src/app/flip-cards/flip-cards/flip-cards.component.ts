@@ -15,6 +15,7 @@ export class FlipCardsComponent implements OnInit {
   public flip: boolean = false;
   public next: boolean = false;
   private indexNumber: number = 0;
+  public showAll: boolean = false;
 
   constructor(private flipCardsService: FlipcardsService) {
   }
@@ -44,6 +45,7 @@ export class FlipCardsComponent implements OnInit {
     })
   }
 
+
   fliping() {
     this.flip = !this.flip;
     this.next = !this.next;
@@ -52,5 +54,8 @@ export class FlipCardsComponent implements OnInit {
     this.getRandomFlipCard()
     this.next = !this.next
     this.flip = !this.flip;
+  }
+  showCards(){
+    this.showAll = !this.showAll;
   }
 }

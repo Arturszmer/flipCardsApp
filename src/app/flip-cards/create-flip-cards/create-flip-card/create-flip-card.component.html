@@ -1,0 +1,16 @@
+<div class="form-style">
+  <ng-content select="h3"></ng-content>
+  <form [formGroup]="profileForm" (ngSubmit)="createNewFlipCard()">
+    <div class="form-group font-style">
+      <label for="frontContent">front:</label>
+      <input formControlName="front" type="text" class="form-control" id="frontContent">
+    </div>
+    <div class="form-group font-style">
+      <label for="backContent">back:</label>
+      <input formControlName="back" type="text" class="form-control" id="backContent">
+    </div>
+    <div class="btn-place">
+      <ng-content select="button"></ng-content>
+    </div>
+  </form>
+</div>

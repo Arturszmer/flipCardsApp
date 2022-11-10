@@ -7,6 +7,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FlipcardsModule} from "./flip-cards/flipcards.module";
 import { LoginPageComponent } from './main-page/login-page/login-page.component';
 import { AuthFormComponent } from './main-page/login-page/auth-form/auth-form.component';
+import { NavBarComponent } from './main-page/nav-bar/nav-bar.component';
+import {RouterLinkWithHref, RouterOutlet} from "@angular/router";
+import {AppRoutingModule} from "./app-routing.module";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -14,11 +18,16 @@ import { AuthFormComponent } from './main-page/login-page/auth-form/auth-form.co
     MainPageComponent,
     LoginPageComponent,
     AuthFormComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    FlipcardsModule
+    FlipcardsModule,
+    RouterOutlet,
+    RouterLinkWithHref,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
